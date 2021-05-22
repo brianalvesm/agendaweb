@@ -1,0 +1,82 @@
+// Agenda Web - Folha de estilos
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html, body
+	margin: 0
+	font-family: 'Roboto', sans-serif
+	color: #666
+
+a, a:active
+	text-decoration: none
+	color: inherit
+
+$lightblue: #1D71B8
+$darkblue: #214E7E
+
+// Helpers
+.wrapper
+	.flex
+		display: flex
+	.wrap
+		flex-wrap: wrap
+	.align-center
+		align-items: center
+	.align-start
+		align-items: flex-start
+	.justify-end
+		justify-content: flex-end
+	.flex-column
+		flex-direction: column 
+
+// Header & Navigation
+header
+	padding: 24px 0
+	box-shadow: 0 4px 16px 0 rgba(0,0,0, 0.8)
+	background-color: white
+	.flex
+		width: 100%
+	nav a
+		padding-right: 24px
+		&.active
+			color: $lightblue
+			font-weight: 900
+
+section
+	&.hero
+		background-image: url('../images/hero-bg.jpg')
+		background-repeat: no-repeat
+		background-position: center top
+		background-size: cover
+		.section-wrap
+			height: 500px
+		.title
+			font-weight: 900
+			font-size: 44px
+			color: #214E7E
+			margin-bottom: 32px
+	&.sobre
+		padding: 56px 0
+	&.planos
+		padding: 40px 0
+		background-color: #f2f2f2
+
+.card
+	background-color: white
+	border-radius: 24px
+
+// Componentes
+.wrapper
+	.button
+		display: block
+		margin-bottom: 0
+		padding: 16px 28px
+		color: white
+		font-size: 16px
+		font-weight: 700
+		border-radius: 50px
+		text-decoration: none
+		&.dark-blue
+			background-color: $darkblue
+		&.light-blue
+			background-color: $lightblue
