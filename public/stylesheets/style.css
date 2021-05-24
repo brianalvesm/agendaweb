@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-html, body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  color: #666; }
-
-a, a:active {
-  text-decoration: none;
-  color: inherit; }
-
 .wrapper .flex {
   display: flex; }
 
@@ -20,11 +11,61 @@ a, a:active {
 .wrapper .align-start {
   align-items: flex-start; }
 
+.wrapper .justify-center {
+  justify-content: center; }
+
 .wrapper .justify-end {
   justify-content: flex-end; }
 
 .wrapper .flex-column {
   flex-direction: column; }
+
+html, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666; }
+
+a, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+.wrapper .button {
+  display: block;
+  margin-bottom: 0;
+  padding: 16px 28px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none; }
+  .wrapper .button.dark-blue {
+    background-color: #214E7E; }
+  .wrapper .button.light-blue {
+    background-color: #1D71B8; }
+  .wrapper .button.white {
+    background-color: white;
+    color: #214E7E; }
+
+.wrapper .title {
+  color: #171717;
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 16px;
+  line-height: initial; }
+
+.wrapper .second-title {
+  color: #214E7E;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+  line-height: initial; }
+
+.wrapper .card {
+  background-color: white;
+  border-radius: 24px;
+  padding: 24px; }
 
 header {
   padding: 24px 0;
@@ -46,7 +87,6 @@ section.hero {
   section.hero .section-wrap {
     height: 500px; }
   section.hero .title {
-    font-weight: 900;
     font-size: 44px;
     color: #214E7E;
     margin-bottom: 32px; }
@@ -58,20 +98,19 @@ section.planos {
   padding: 40px 0;
   background-color: #f2f2f2; }
 
-.card {
-  background-color: white;
-  border-radius: 24px; }
+section.cadastro {
+  background-image: url("../images/cadastro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  section.cadastro .section-wrap {
+    height: 424px; }
+  section.cadastro .title {
+    font-size: 36px;
+    color: white; }
+  section.cadastro .paragraph {
+    color: white; }
 
-.wrapper .button {
-  display: block;
-  margin-bottom: 0;
-  padding: 16px 28px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 50px;
-  text-decoration: none; }
-  .wrapper .button.dark-blue {
-    background-color: #214E7E; }
-  .wrapper .button.light-blue {
-    background-color: #1D71B8; }
+footer {
+  height: 140px;
+  background-color: #666; }
