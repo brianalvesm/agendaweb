@@ -38,6 +38,9 @@ a, a:active
 
 // Componentes
 .wrapper
+	// max-width: 1280px
+	// margin: 0 auto
+	// overflow: hidden
 	.button
 		display: block
 		margin-bottom: 0
@@ -56,17 +59,20 @@ a, a:active
 			color: $darkblue
 
 	.title
-		color: $darkgray
-		font-weight: 900
-		font-size: 36px
 		margin-bottom: 16px
 		line-height: initial
-	.second-title
-		color: $darkblue
-		font-weight: 700
-		font-size: 24px
-		margin-bottom: 16px
-		line-height: initial
+		&--first
+			color: $darkgray
+			font-weight: 900
+			font-size: 36px
+		&--second
+			color: $darkblue
+			font-weight: 700
+			font-size: 24px
+		&--third
+			color: $gray
+			font-weight: 900
+			font-size: 24px
 
 	.card
 		background-color: white
@@ -101,6 +107,15 @@ section
 			margin-bottom: 32px
 	&.sobre
 		padding: 56px 0
+		background-image: url('../images/sobre-bg.png')
+		background-repeat: no-repeat
+		background-position: right bottom
+		.icones
+			margin-bottom: 24px
+		article
+			max-width: 250px
+		.grid-container:last-child
+			padding-top: 65px
 	&.planos
 		padding: 40px 0
 		background-color: #f2f2f2
@@ -109,6 +124,7 @@ section
 		background-repeat: no-repeat
 		background-position: center top
 		background-size: cover
+		margin: 56px 0
 		.section-wrap
 			height: 424px
 		.title

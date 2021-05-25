@@ -49,18 +49,20 @@ a, a:active {
     color: #214E7E; }
 
 .wrapper .title {
-  color: #171717;
-  font-weight: 900;
-  font-size: 36px;
   margin-bottom: 16px;
   line-height: initial; }
-
-.wrapper .second-title {
-  color: #214E7E;
-  font-weight: 700;
-  font-size: 24px;
-  margin-bottom: 16px;
-  line-height: initial; }
+  .wrapper .title--first {
+    color: #171717;
+    font-weight: 900;
+    font-size: 36px; }
+  .wrapper .title--second {
+    color: #214E7E;
+    font-weight: 700;
+    font-size: 24px; }
+  .wrapper .title--third {
+    color: #666;
+    font-weight: 900;
+    font-size: 24px; }
 
 .wrapper .card {
   background-color: white;
@@ -92,7 +94,16 @@ section.hero {
     margin-bottom: 32px; }
 
 section.sobre {
-  padding: 56px 0; }
+  padding: 56px 0;
+  background-image: url("../images/sobre-bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+  section.sobre .icones {
+    margin-bottom: 24px; }
+  section.sobre article {
+    max-width: 250px; }
+  section.sobre .grid-container:last-child {
+    padding-top: 65px; }
 
 section.planos {
   padding: 40px 0;
@@ -102,7 +113,8 @@ section.cadastro {
   background-image: url("../images/cadastro-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover; }
+  background-size: cover;
+  margin: 56px 0; }
   section.cadastro .section-wrap {
     height: 424px; }
   section.cadastro .title {
