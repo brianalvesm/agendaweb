@@ -35,7 +35,6 @@ a, a:active {
   color: inherit; }
 
 img {
-  width: 100%;
   height: auto; }
 
 .wrapper {
@@ -106,7 +105,8 @@ section.hero {
   background-image: url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 120px; }
   section.hero .section-wrap {
     height: 500px; }
   section.hero .title {
