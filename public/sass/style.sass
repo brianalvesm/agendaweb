@@ -30,10 +30,25 @@ $gray: #666
 		justify-content: flex-end
 		@media only screen and (max-width: 40rem)
 			justify-content: center
+	.space-between
+		justify-content: space-between
 	.flex-column
 		flex-direction: column
 	.full-height
 		height: 100% 
+
+// Menu toggle aparece na tela pequena (abaixo 640px)
+.menu-toggle
+	display: none
+	img
+		width: 32px
+	@media only screen and (max-width: 40rem)
+		display: block
+
+@media only screen and (max-width: 40rem)
+	.js nav 
+		overflow: hidden
+		max-height: 0
 
 html, body
 	margin: 0
@@ -115,11 +130,27 @@ img
 			font-weight: 900
 	&.scrolling
 		padding: 16px 0
+		transition: 0.2s
 		.logo
 			max-width: 170px
 			max-height: 35px
 		nav a
 			font-size: 16px
+	@media only screen and (max-width: 40rem)
+		.header-wrapper
+			flex-direction: column
+		.logo
+			max-width: 240px
+		nav
+			flex-direction: column
+			transition: 0.2s
+			a
+				padding-right: 0
+				padding-bottom: 10px
+			&.active
+				transition: 0.2s
+				margin: 20px 0
+				max-height: initial
 
 // Sections
 section

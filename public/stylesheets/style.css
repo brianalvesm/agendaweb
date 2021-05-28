@@ -29,11 +29,27 @@
     .wrapper .justify-end-to-center {
       justify-content: center; } }
 
+.wrapper .space-between {
+  justify-content: space-between; }
+
 .wrapper .flex-column {
   flex-direction: column; }
 
 .wrapper .full-height {
   height: 100%; }
+
+.menu-toggle {
+  display: none; }
+  .menu-toggle img {
+    width: 32px; }
+  @media only screen and (max-width: 40rem) {
+    .menu-toggle {
+      display: block; } }
+
+@media only screen and (max-width: 40rem) {
+  .js nav {
+    overflow: hidden;
+    max-height: 0; } }
 
 html, body {
   margin: 0;
@@ -109,12 +125,28 @@ img {
       color: #1D71B8;
       font-weight: 900; }
   .header.scrolling {
-    padding: 16px 0; }
+    padding: 16px 0;
+    transition: 0.2s; }
     .header.scrolling .logo {
       max-width: 170px;
       max-height: 35px; }
     .header.scrolling nav a {
       font-size: 16px; }
+  @media only screen and (max-width: 40rem) {
+    .header .header-wrapper {
+      flex-direction: column; }
+    .header .logo {
+      max-width: 240px; }
+    .header nav {
+      flex-direction: column;
+      transition: 0.2s; }
+      .header nav a {
+        padding-right: 0;
+        padding-bottom: 10px; }
+      .header nav.active {
+        transition: 0.2s;
+        margin: 20px 0;
+        max-height: initial; } }
 
 section.hero {
   background-image: url("../images/hero-bg.jpg");

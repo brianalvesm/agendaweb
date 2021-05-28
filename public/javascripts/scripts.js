@@ -12,5 +12,15 @@ $(document).ready(function(){
     headerScroll();
     $(window).scroll(headerScroll);
 
+    $('body').addClass('js');
+    var $menu = $('#menu'),
+    $menuToggle = $('.menu-toggle');
+    
+    $menuToggle.click(function() {
+      $menuToggle.toggleClass('active');
+      $menu.toggleClass('active');
+      return false;
+    });
+
   })(jQuery);
 });
