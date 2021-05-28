@@ -11,11 +11,23 @@
 .wrapper .align-start {
   align-items: flex-start; }
 
+.wrapper .align-start-to-center {
+  align-items: flex-start; }
+  @media only screen and (max-width: 40rem) {
+    .wrapper .align-start-to-center {
+      align-items: center; } }
+
 .wrapper .justify-center {
   justify-content: center; }
 
 .wrapper .justify-end {
   justify-content: flex-end; }
+
+.wrapper .justify-end-to-center {
+  justify-content: flex-end; }
+  @media only screen and (max-width: 40rem) {
+    .wrapper .justify-end-to-center {
+      justify-content: center; } }
 
 .wrapper .flex-column {
   flex-direction: column; }
@@ -70,6 +82,9 @@ img {
       color: #666;
       font-weight: 900;
       font-size: 24px; }
+    @media only screen and (max-width: 40rem) {
+      .wrapper .title {
+        margin: 32px auto; } }
   .wrapper .card {
     background-color: white;
     border-radius: 24px;
@@ -123,9 +138,11 @@ section.sobre {
   section.sobre .grid-container:last-child {
     padding-top: 65px; }
   section.sobre .sobre-bg {
-    height: 444px;
     position: relative;
     right: -120px; }
+    @media only screen and (max-width: 40rem) {
+      section.sobre .sobre-bg {
+        right: initial; } }
 
 section.planos {
   padding: 40px 0;
@@ -134,6 +151,9 @@ section.planos {
     margin-bottom: 32px; }
   section.planos .card {
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08); }
+    @media only screen and (max-width: 40rem) {
+      section.planos .card {
+        margin: 10px; } }
 
 section.cadastro {
   background-image: url("../images/cadastro-bg.jpg");
@@ -174,3 +194,15 @@ footer {
       background-color: rgba(0, 0, 0, 0.7); }
     footer .social-media-icons a:last-child {
       margin-right: 0; }
+  @media only screen and (max-width: 40rem) {
+    footer {
+      padding: 20px; }
+      footer .footer-wrapper {
+        height: initial;
+        flex-direction: column; }
+      footer .footer-nav {
+        flex-direction: column; }
+        footer .footer-nav a {
+          margin-right: 0; }
+      footer .flex {
+        margin-top: 10px; } }

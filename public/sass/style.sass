@@ -18,10 +18,18 @@ $gray: #666
 		align-items: center
 	.align-start
 		align-items: flex-start
+	.align-start-to-center
+		align-items: flex-start
+		@media only screen and (max-width: 40rem)
+			align-items: center
 	.justify-center
 		justify-content: center
 	.justify-end
 		justify-content: flex-end
+	.justify-end-to-center
+		justify-content: flex-end
+		@media only screen and (max-width: 40rem)
+			justify-content: center
 	.flex-column
 		flex-direction: column
 	.full-height
@@ -78,6 +86,8 @@ img
 			color: $gray
 			font-weight: 900
 			font-size: 24px
+		@media only screen and (max-width: 40rem)
+			margin: 32px auto
 
 	.card
 		background-color: white
@@ -134,9 +144,10 @@ section
 		.grid-container:last-child
 			padding-top: 65px
 		.sobre-bg
-			height: 444px
 			position: relative
 			right: -120px
+			@media only screen and (max-width: 40rem)
+				right: initial
 	&.planos
 		padding: 40px 0
 		background-color: #f2f2f2
@@ -144,6 +155,8 @@ section
 			margin-bottom: 32px
 		.card
 			box-shadow: 0 4px 16px 0 rgba(black, 0.08)
+			@media only screen and (max-width: 40rem)
+				margin: 10px
 	&.cadastro
 		background-image: url('../images/cadastro-bg.jpg')
 		background-repeat: no-repeat
@@ -183,3 +196,14 @@ footer
 			background-color: rgba(black, 0.7)
 		&:last-child
 			margin-right: 0
+	@media only screen and (max-width: 40rem)
+		padding: 20px
+		.footer-wrapper
+			height: initial
+			flex-direction: column
+		.footer-nav
+			flex-direction: column
+			a
+				margin-right: 0
+		.flex
+			margin-top: 10px
