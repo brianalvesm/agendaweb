@@ -98,6 +98,10 @@ img {
       color: #666;
       font-weight: 900;
       font-size: 24px; }
+    .wrapper .title--fourth {
+      color: #666;
+      font-weight: 400;
+      font-size: 24px; }
   .wrapper .card {
     background-color: white;
     border-radius: 24px;
@@ -208,8 +212,14 @@ section.cadastro {
 
 .page--cadastro section.hero {
   background-image: url("../images/cadastro-hero-bg.jpg"); }
+  .page--cadastro section.hero .section-wrap {
+    height: 350px; }
   .page--cadastro section.hero .title {
     color: white; }
+
+.page--cadastro section.form {
+  padding: 56px 0;
+  text-align: center; }
 
 footer {
   background-color: #666;
