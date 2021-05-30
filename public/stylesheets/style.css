@@ -115,7 +115,7 @@ img {
     width: 100%; }
   .header .logo {
     max-width: 340px;
-    transition: 0.2s; }
+    transition: 0.5s; }
   .header .header-nav a {
     padding-right: 24px; }
     .header .header-nav a.active {
@@ -126,7 +126,8 @@ img {
     transition: 0.2s; }
     .header.scrolling .logo {
       max-width: 170px;
-      max-height: 35px; }
+      max-height: 35px;
+      transition: 0.5s; }
     .header.scrolling .header-nav a {
       font-size: 16px; }
   @media only screen and (max-width: 40rem) {
@@ -203,6 +204,11 @@ section.cadastro {
     font-size: 36px;
     color: white; }
   section.cadastro .paragraph {
+    color: white; }
+
+.page--cadastro section.hero {
+  background-image: url("../images/cadastro-hero-bg.jpg"); }
+  .page--cadastro section.hero .title {
     color: white; }
 
 footer {
