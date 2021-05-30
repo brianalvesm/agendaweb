@@ -221,6 +221,39 @@ section.cadastro {
   padding: 56px 0;
   text-align: center; }
 
+.page--cadastro section .freebirdFormviewerViewHeaderHeader.exportHeader {
+  display: none; }
+
+.page--cadastro section .freebirdFormviewerComponentsQuestionBaseRoot {
+  border: 0;
+  padding: 0;
+  margin: 24px auto; }
+
+.page--cadastro section .freebirdFormviewerViewNumberedItemContainer {
+  height: 120px; }
+
+.page--cadastro section .freebirdFormviewerComponentsQuestionBaseHeader {
+  margin-bottom: 0; }
+
+.page--cadastro section .freebirdFormviewerComponentsQuestionBaseTitle {
+  font-size: 24px;
+  font-weight: 900;
+  color: #171717; }
+
+.page--cadastro section .freebirdFormviewerComponentsQuestionTextTextInput .exportLabel {
+  padding: 14px 16px; }
+
+.page--cadastro section .freebirdFormviewerComponentsQuestionTextShort.freebirdFormviewerComponentsQuestionTextTextInput {
+  width: 100%; }
+
+.page--cadastro section .quantumWizTextinputPaperinputInput {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0;
+  font-size: 18px;
+  width: 100%;
+  height: 50px; }
+
 footer {
   background-color: #666;
   color: white; }
