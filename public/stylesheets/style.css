@@ -47,7 +47,7 @@
       display: block; } }
 
 @media only screen and (max-width: 40rem) {
-  .js nav {
+  .js .header-nav {
     overflow: hidden;
     max-height: 0; } }
 
@@ -98,9 +98,6 @@ img {
       color: #666;
       font-weight: 900;
       font-size: 24px; }
-    @media only screen and (max-width: 40rem) {
-      .wrapper .title {
-        margin: 32px auto; } }
   .wrapper .card {
     background-color: white;
     border-radius: 24px;
@@ -119,9 +116,9 @@ img {
   .header .logo {
     max-width: 340px;
     transition: 0.2s; }
-  .header nav a {
+  .header .header-nav a {
     padding-right: 24px; }
-    .header nav a.active {
+    .header .header-nav a.active {
       color: #1D71B8;
       font-weight: 900; }
   .header.scrolling {
@@ -130,20 +127,22 @@ img {
     .header.scrolling .logo {
       max-width: 170px;
       max-height: 35px; }
-    .header.scrolling nav a {
+    .header.scrolling .header-nav a {
       font-size: 16px; }
   @media only screen and (max-width: 40rem) {
     .header .header-wrapper {
       flex-direction: column; }
     .header .logo {
       max-width: 240px; }
-    .header nav {
+    .header .header-nav {
       flex-direction: column;
       transition: 0.2s; }
-      .header nav a {
+      .header .header-nav a {
         padding-right: 0;
         padding-bottom: 10px; }
-      .header nav.active {
+        .header .header-nav a.button {
+          padding: 16px 28px; }
+      .header .header-nav.active {
         transition: 0.2s;
         margin: 20px 0;
         max-height: initial; } }
@@ -175,6 +174,11 @@ section.sobre {
     @media only screen and (max-width: 40rem) {
       section.sobre .sobre-bg {
         right: initial; } }
+  @media only screen and (max-width: 40rem) {
+    section.sobre article {
+      margin: 40px auto; }
+    section.sobre .title--first {
+      margin-top: 80px; } }
 
 section.planos {
   padding: 40px 0;
