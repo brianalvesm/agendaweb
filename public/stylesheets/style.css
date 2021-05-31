@@ -261,7 +261,8 @@ section.cadastro {
   padding: 0;
   font-size: 18px;
   width: 100%;
-  height: 50px; }
+  height: 50px;
+  box-shadow: none; }
 
 .page--cadastro section .freebirdThemedFilledButtonM2 {
   display: block;
