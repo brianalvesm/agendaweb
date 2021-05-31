@@ -221,6 +221,11 @@ section.cadastro {
   padding: 56px 0;
   text-align: center; }
 
+.page--cadastro section .freebirdFormviewerViewCenteredContent {
+  margin: auto;
+  max-width: 864px;
+  width: 100%; }
+
 .page--cadastro section .freebirdFormviewerViewHeaderHeader.exportHeader {
   display: none; }
 
@@ -230,7 +235,7 @@ section.cadastro {
   margin: 24px auto; }
 
 .page--cadastro section .freebirdFormviewerViewNumberedItemContainer {
-  height: 120px; }
+  height: 100px; }
 
 .page--cadastro section .freebirdFormviewerComponentsQuestionBaseHeader {
   margin-bottom: 0; }
