@@ -50,6 +50,9 @@ $gray: #666
 		overflow: hidden
 		max-height: 0
 
+// html
+// 	scroll-behavior: smooth
+
 html, body
 	margin: 0
 	font-family: 'Roboto', sans-serif
@@ -90,7 +93,7 @@ img
 		margin-bottom: 16px
 		line-height: initial
 		&--first
-			color: $darkgray
+			color: $gray
 			font-weight: 900
 			font-size: 36px
 		&--second
@@ -110,6 +113,22 @@ img
 		background-color: white
 		border-radius: 24px
 		padding: 24px
+
+	.link
+		color: $lightblue
+		font-size: 24px
+		font-weight: 900
+		text-decoration: underline
+		position: relative
+		&:after
+			content: ""
+			background-image: url(../images/icon-arrow-down.png)
+			width: 14px
+			height: 8px
+			display: block
+			position: absolute
+			right: -22px
+			top: 13px
 
 // Header & Navigation
 .header
@@ -176,9 +195,12 @@ section
 		.icones
 			margin-bottom: 24px
 		article
-			max-width: 250px
+			max-width: 332px
 		.grid-container:last-child
 			padding-top: 65px
+		.sobre-ilustracao
+			position: relative
+			top: -92px // 36px + 56px de padding
 		.sobre-bg
 			position: relative
 			right: -120px
@@ -189,15 +211,15 @@ section
 				margin: 40px auto
 			.title--first
 				margin-top: 80px
-	&.planos
-		padding: 40px 0
-		background-color: #f2f2f2
-		.paragraph
-			margin-bottom: 32px
-		.card
-			box-shadow: 0 4px 16px 0 rgba(black, 0.08)
-			@media only screen and (max-width: 40rem)
-				margin: 10px
+	// &.planos
+	// 	padding: 40px 0
+	// 	background-color: #f2f2f2
+	// 	.paragraph
+	// 		margin-bottom: 32px
+	// 	.card
+	// 		box-shadow: 0 4px 16px 0 rgba(black, 0.08)
+	// 		@media only screen and (max-width: 40rem)
+	// 			margin: 10px
 	&.cadastro
 		background-image: url('../images/cadastro-bg.jpg')
 		background-repeat: no-repeat

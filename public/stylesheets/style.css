@@ -87,7 +87,7 @@ img {
     margin-bottom: 16px;
     line-height: initial; }
     .wrapper .title--first {
-      color: #171717;
+      color: #666;
       font-weight: 900;
       font-size: 36px; }
     .wrapper .title--second {
@@ -106,6 +106,21 @@ img {
     background-color: white;
     border-radius: 24px;
     padding: 24px; }
+  .wrapper .link {
+    color: #1D71B8;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: underline;
+    position: relative; }
+    .wrapper .link:after {
+      content: "";
+      background-image: url(../images/icon-arrow-down.png);
+      width: 14px;
+      height: 8px;
+      display: block;
+      position: absolute;
+      right: -22px;
+      top: 13px; }
 
 .header {
   padding: 24px 0;
@@ -170,9 +185,12 @@ section.sobre {
   section.sobre .icones {
     margin-bottom: 24px; }
   section.sobre article {
-    max-width: 250px; }
+    max-width: 332px; }
   section.sobre .grid-container:last-child {
     padding-top: 65px; }
+  section.sobre .sobre-ilustracao {
+    position: relative;
+    top: -92px; }
   section.sobre .sobre-bg {
     position: relative;
     right: -120px; }
@@ -184,17 +202,6 @@ section.sobre {
       margin: 40px auto; }
     section.sobre .title--first {
       margin-top: 80px; } }
-
-section.planos {
-  padding: 40px 0;
-  background-color: #f2f2f2; }
-  section.planos .paragraph {
-    margin-bottom: 32px; }
-  section.planos .card {
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08); }
-    @media only screen and (max-width: 40rem) {
-      section.planos .card {
-        margin: 10px; } }
 
 section.cadastro {
   background-image: url("../images/cadastro-bg.jpg");
