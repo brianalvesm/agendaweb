@@ -186,11 +186,14 @@ section.sobre {
     margin-bottom: 24px; }
   section.sobre article {
     max-width: 332px; }
-  section.sobre .grid-container:last-child {
+  section.sobre .grid-container:nth-child(n+2) {
     padding-top: 65px; }
   section.sobre .sobre-ilustracao {
     position: relative;
     top: -92px; }
+    @media only screen and (max-width: 40rem) {
+      section.sobre .sobre-ilustracao {
+        top: initial; } }
   section.sobre .sobre-bg {
     position: relative;
     right: -120px; }
